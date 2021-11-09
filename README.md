@@ -2,6 +2,9 @@
 En este ejemplo, ejecutaremos un job de mapreduce utilizando un cluster de GCP.
 
 ## Datos
+Para el ejemplo de wordcount:
+https://drive.google.com/drive/folders/1RYLe6IyOUGKgwX6fUyZxVechr9KdlQWL?usp=sharing
+
 Para el ejemplo de NYC bike rides:
 
 https://drive.google.com/drive/folders/1R6se32EtNNdOMSHD8sW-enuk2ff7l48W?usp=sharing 
@@ -10,12 +13,17 @@ https://drive.google.com/drive/folders/1R6se32EtNNdOMSHD8sW-enuk2ff7l48W?usp=sha
 Esto nos sirve para leer los datos que van a a ser procesados y escribir los resultados del job mapreduce. Sin este bucket, al momento de borrar el cluster perdemos todos los datos.
 
 Los datos han sido cargados a un GCS bucket con la siguiente estructura:
+
 Archivos de lectura 
 `input/wordcount/`
+
 `input/rides/`
 
+
 Scripts de python mapper y reducer
+
 `wordcount/`
+
 `NYCbikerides/`
 
 También definimos una carpeta donde se alojarán el resultado
