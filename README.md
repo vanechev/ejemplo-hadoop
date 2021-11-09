@@ -3,6 +3,7 @@ En este ejemplo, ejecutaremos un job de mapreduce utilizando un cluster de GCP.
 
 ## Datos
 Para el ejemplo de wordcount:
+
 https://drive.google.com/drive/folders/1RYLe6IyOUGKgwX6fUyZxVechr9KdlQWL?usp=sharing
 
 Para el ejemplo de NYC bike rides:
@@ -15,6 +16,7 @@ Esto nos sirve para leer los datos que van a a ser procesados y escribir los res
 Los datos han sido cargados a un GCS bucket con la siguiente estructura:
 
 Archivos de lectura 
+
 `input/wordcount/`
 
 `input/rides/`
@@ -26,7 +28,8 @@ Scripts de python mapper y reducer
 
 `NYCbikerides/`
 
-También definimos una carpeta donde se alojarán el resultado
+También definimos una carpeta donde se alojarán los resultados
+
 `output/`
 
 <img width="1275" alt="Screen Shot 2021-11-08 at 13 21 24" src="https://user-images.githubusercontent.com/7211600/140800004-6e18c2a0-debb-4a5b-9bf5-cdbed6733b6a.png">
@@ -46,7 +49,8 @@ Vamos a crear un cluster con 1 master node y 4 worker nodes (standard n2)
 <img width="1275" alt="Screen Shot 2021-11-08 at 08 18 37" src="https://user-images.githubusercontent.com/7211600/140800237-5ecd772b-1991-4998-9bb8-569867e31193.png">
 
 Para visualizar nuestro cluster, nodos, job y demás procesos:
-- Instalar gcloud (Cloud SDK) https://cloud.google.com/sdk/docs/install
+- Instalar gcloud (Cloud SDK) 
+	https://cloud.google.com/sdk/docs/install
 
 - Crear tunel ssh que nos permita conectar remotamente (1080 es el puerto que vamos a abrir). 
 Para esto:
